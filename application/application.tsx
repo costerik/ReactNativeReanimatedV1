@@ -1,25 +1,16 @@
-import React from 'react';
-import { SafeAreaView, StyleSheet, View, Text, StatusBar } from 'react-native';
+import React, { ReactElement } from 'react';
+import { SafeAreaView } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
 
-const App: React.FC = () => {
+import { Main } from './stacks';
+import styles from './styles';
+
+export default (): ReactElement => {
   return (
-    <>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView style={styles.flex}>
-        <View>
-          <Text>Hello</Text>
-        </View>
-      </SafeAreaView>
-    </>
+    <SafeAreaView style={styles.flexOne}>
+      <NavigationContainer>
+        <Main />
+      </NavigationContainer>
+    </SafeAreaView>
   );
 };
-
-const styles = StyleSheet.create({
-  flex: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-});
-
-export default App;
