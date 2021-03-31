@@ -1,7 +1,9 @@
 import React, { ReactElement } from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 
-const Stack = createStackNavigator();
+import type { MainParamList } from './main.types';
+
+const Stack = createStackNavigator<MainParamList>();
 
 import { Transitions, UseTransition, Chapters } from '../../screens';
 

@@ -17,7 +17,7 @@ type ScreenType = {
 
 const data: Array<ItemType> = [
   { name: 'Transitions', destiny: 'Transitions', id: 0 },
-  { name: 'useTransition', destiny: 'UseTransition', id: 0 },
+  { name: 'useTransition', destiny: 'UseTransition', id: 1 },
 ];
 
 export default ({ navigation }: ScreenType): ReactElement => {
